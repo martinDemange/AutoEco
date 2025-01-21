@@ -1,0 +1,413 @@
+district_au_forge_zone = { # alloys production   last playthrought pop had ~ 15,434 multiplier for alloys production
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		#exists = from
+		has_modifier = au_world_automated
+	}
+	
+	potential = {
+		# the OR was an attempt to use the district on modded world
+		#OR = { 
+			#uses_district_set = standard
+			# uses_district_set = forerunner_ark   # WIP
+			# uses_district_set = forerunner_halo
+			# uses_district_set = maethrillian
+			# uses_district_set = requiem
+			# uses_district_set = forerunner_shield_world
+		#}
+		has_modifier = au_world_automated
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+	}
+	
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = 1000
+			volatile_motes = 33
+		}
+		upkeep = {
+			energy = 5
+			minerals = 30
+		}
+		produces = {
+			alloys = 90
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+	
+	planet_modifier = {
+			planet_housing_add = 2
+	}
+}
+
+district_au_factory_zone = { # consumer goods production
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated
+	}
+	
+	potential = {
+		uses_district_set = standard
+		has_modifier = au_world_automated	
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_arms_industry
+		district_rw_industrial
+	}
+	
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = 1000
+			rare_crystals = 33
+		}
+		upkeep = {
+			energy = 5
+			minerals = 30
+		}
+		produces = {
+			consumer_goods = 90
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+
+	planet_modifier = {
+			planet_housing_add = 2
+	}
+}
+
+district_au_mining_zone = { # mineral production
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated
+	}
+
+	potential = {
+		has_modifier = au_world_automated
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining_uncapped
+	}
+
+	resources = {
+		category = planet_districts_mining
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+		produces = {
+			minerals = 100
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+}
+
+district_au_generator_zone = { # energy production
+	expansion_planner = yes
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated
+	}
+
+	potential = {
+		has_modifier = au_world_automated
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator_uncapped
+	}
+
+	resources = {
+		category = planet_districts_generator
+		cost = {
+			minerals = 1000
+		}
+		produces = {
+			energy = 100
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+		tech_fusion_power
+	}
+}
+
+district_au_farming_zone = { # food production
+	expansion_planner = yes
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated
+	}
+
+	potential = {
+		has_modifier = au_world_automated
+	}
+
+	allow = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_farming_uncapped
+	}
+
+	resources = {
+		category = planet_districts_farming
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 10
+		}
+		produces = {
+			food = 100
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+}

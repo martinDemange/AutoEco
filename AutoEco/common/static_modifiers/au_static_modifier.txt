@@ -1,0 +1,41 @@
+au_world_automated = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}
+
+au_world_automated_ecu = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}
+
+au_world_automated_hab = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}
+
+au_world_automated_rw = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}
+
+au_world_automated_machine = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}
+
+au_world_automated_hive = {
+	planet_building_build_speed_mult = 2
+	pop_environment_tolerance = 0.05
+	# icon = "gfx/interface/icon/planet_modifiers/pm_au_world_automated"
+	  icon_frame = 1
+}

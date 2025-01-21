@@ -1,0 +1,270 @@
+decision_build_automation = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = au_world_automated }
+		uses_district_set = standard
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated
+			days = -1
+		}	
+	}
+
+	# ai_weight = {
+	# 	weight = 0
+	# 	modifier = {
+	# 		factor = 0
+	# 		num_pops < 20
+	# 	}
+	# }
+}
+
+decision_build_automation_ecu = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = penal_colony }
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = au_world_automated_ecu }
+		uses_district_set = city_world
+
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated_ecu
+			days = -1
+		}	
+	}
+}
+
+decision_build_automation_hab = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = au_world_automated_hab }
+		# is_planet_class = pc_habitat
+		uses_district_set = habitat
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated_hab
+			days = -1
+		}	
+	}
+}
+
+decision_build_automation_rw = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = au_world_automated_rw }
+		#is_planet_class = pc_ringworld_habitable
+		uses_district_set = ring_world
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated_rw
+			days = -1
+		}	
+	}
+}
+
+decision_build_automation_machine = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = au_world_automated_machine }
+		#is_planet_class = pc_machine
+		uses_district_set = machine_world
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated_machine
+			days = -1
+		}	
+	}
+
+}
+
+decision_build_automation_hive = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+			volatile_motes = 100
+			rare_crystals = 100
+			exotic_gases = 100
+		}
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = au_world_automated_hive }
+		#is_planet_class = pc_hive
+		uses_district_set = hive_world
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		add_modifier = {
+			modifier = au_world_automated_hive
+			days = -1
+		}	
+	}
+}
+
+decision_remove_automation = {
+	owned_planets_only = yes
+	enactment_time = 480
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		OR = {
+			has_modifier = au_world_automated
+			has_modifier = au_world_automated_ecu
+			has_modifier = au_world_automated_hab
+			has_modifier = au_world_automated_hive
+			has_modifier = au_world_automated_machine
+		}
+	}
+
+	prerequisites = { "tech_au_organisation" }
+
+	effect = {
+		if = {
+			limit = { # for regular district
+				has_modifier = au_world_automated
+			}
+			remove_modifier = au_world_automated
+		}
+		else_if = { # fot ecu district
+			limit = {
+				has_modifier = au_world_automated_ecu
+			}
+			remove_modifier = au_world_automated_ecu
+		}
+		else_if = {
+			limit = { #for hab district
+				has_modifier = au_world_automated_hab
+			}
+			remove_modifier = au_world_automated_hab
+		}
+		else_if = {
+			limit = { # for ring world disctrict
+				has_modifier = au_world_automated_rw
+			}
+			remove_modifier = au_world_automated_rw
+		}
+		else_if = {
+			limit = { # for hive world
+				has_modifier = au_world_automated_hive
+			}
+			remove_modifier = au_world_automated_hive
+		}
+		else_if = {
+			limit = { # for machine world
+				has_modifier = au_world_automated_machine
+			}
+			remove_modifier = au_world_automated_machine
+		}
+	}
+}

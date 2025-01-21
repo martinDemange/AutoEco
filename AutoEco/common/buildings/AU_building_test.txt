@@ -1,0 +1,20 @@
+building_sample_au = {
+    base_buildtime = 240
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 100
+            energy = 100
+        }
+        upkeep = {
+            energy = 2
+        }
+        produces = {
+            food = 4
+            minerals = 2
+            alloys = 6
+            consumer_goods = 6
+        }
+    }
+}

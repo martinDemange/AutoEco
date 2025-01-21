@@ -1,0 +1,29 @@
+tech_au_computer = {
+	cost = 5000
+	area = physics
+	tier = 3
+	category = { computing }
+	prerequisites = { "tech_combat_computers_2" }
+	is_rare = yes
+	weight = 20
+}
+
+tech_au_organisation = {
+	cost = 5000
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = {"tech_au_computer" "tech_au_infrastructure" }
+	is_rare = yes
+	weight = 20
+}
+
+tech_au_infrastructure = {
+	cost = 5000
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = {"tech_mine_exotic_gases" "tech_mine_rare_crystals" "tech_mine_volatile_motes" } 
+	is_rare = yes
+	weight = 20
+}

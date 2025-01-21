@@ -1,0 +1,350 @@
+# there is a separation because the OR seem to don't work, every empire has his district
+
+district_au_forge_gestalt = { # alloys production   last playthrought pop had ~ 15,434 multiplier for alloys production
+	base_buildtime = 480	  # for hive world
+	is_capped_by_modifier = no
+	
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_hive
+	}
+	
+	potential = {
+		has_modifier = au_world_automated_hive
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_hive
+	}
+	
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = 3000
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 50
+			minerals = 90
+			volatile_motes = 5
+		}
+		produces = {
+			alloys = 270
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+	
+	planet_modifier = {
+			planet_housing_add = 2
+	}
+}
+
+district_au_forge_gestalt = { # alloys production for machine world
+	base_buildtime = 480
+	is_capped_by_modifier = no
+	
+	prerequisites = {
+		tech_basic_industry
+	}
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_machine
+	}
+	
+	potential = {
+		has_modifier = au_world_automated_machine
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_nexus
+	}
+	
+	resources = {
+		category = planet_districts_industrial
+		cost = {
+			minerals = 3000
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 50
+			minerals = 90
+			volatile_motes = 5
+		}
+		produces = {
+			alloys = 270
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+	
+	planet_modifier = {
+			planet_housing_add = 2
+	}
+}
+
+district_au_mining_gestalt = { # mineral production for hive world
+	base_buildtime = 400
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_hive
+	}
+
+	potential = {
+		has_modifier = au_world_automated_hive
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining_uncapped
+	}
+
+	resources = {
+		category = planet_districts_mining
+		cost = {
+			minerals = 3000
+		}
+		upkeep = {
+			energy = 20
+		}
+		produces = {
+			minerals = 300
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+}
+
+district_au_mining_gestalt = { # mineral production for machine world
+	base_buildtime = 400
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_machine
+	}
+
+	potential = {
+		has_modifier = au_world_automated_machine
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining_uncapped
+	}
+
+	resources = {
+		category = planet_districts_mining
+		cost = {
+			minerals = 3000
+		}
+		upkeep = {
+			energy = 20
+		}
+		produces = {
+			minerals = 300
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_mechanized_mining
+	}
+}
+
+district_au_generator_gestalt = { # energy production for hive world
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_hive
+	}
+
+	potential = {
+		has_modifier = au_world_automated_hive
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator_uncapped
+	}
+
+	resources = {
+		category = planet_districts_generator
+		cost = {
+			minerals = 3000
+		}
+		produces = {
+			energy = 300
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+		tech_fusion_power
+	}
+}
+
+district_au_generator_gestalt = { # energy production for machine world
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_machine
+	}
+
+	potential = {
+		has_modifier = au_world_automated_machine
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator_uncapped
+	}
+
+	resources = {
+		category = planet_districts_generator
+		cost = {
+			minerals = 3000
+		}
+		produces = {
+			energy = 300
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+		tech_fusion_power
+	}
+}
+
+district_au_farming_gestalt = { # food production for hive world
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		has_modifier = au_world_automated_hive
+	}
+
+	potential = {
+		has_modifier = au_world_automated_hive
+	}
+	resources = {
+		category = planet_districts_farming
+		cost = {
+			minerals = 3000
+		}
+		upkeep = {
+			energy = 30
+		}
+		produces = {
+			food = 300
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+}

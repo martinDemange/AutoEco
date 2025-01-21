@@ -1,0 +1,118 @@
+﻿l_english:
+
+  #District :
+
+  district_au_forge_zone:0 " Automated forge district"
+  district_au_forge_zone_plural:0 " Automated forge districts"
+  district_au_forge_zone_desc:0 " Automated forge that produces alloys with high efficiency"
+  district_au_factory_zone:0 " Automated factory district"
+  district_au_factory_zone_plural:0 " Automated factories districts"
+  district_au_factory_zone_desc:0 " Automated factory that produces consumer goods with high efficiency"
+  district_au_mining_zone:0 " Automated mining district"
+  district_au_mining_zone_plural:0 " Automated mining districts"
+  district_au_mining_zone_desc:0 " Automated drone harvest and process minerals. They can do this harvesting and processing everywhere on this world and in the other celestial object of this system"
+  district_au_generator_zone:0 " Automated generator district"
+  district_au_generator_zone_plural:0 " Autamated generator districts"
+  district_au_generator_zone_desc:0 " Rows of nuclear fusion power plant that produce enormous quantities of energy. Every power plant are automatised by the use of adapted AI. "
+  district_au_farming_zone:0 " Automated farming district"
+  district_au_farming_zone_plural:0 " Automated farming districts"
+  district_au_farming_zone_desc:0 " Row of automated vertical farm and cultivation center that produce great amount of food."
+ 
+  district_au_forge_ecu:0 " Automated foundry arcology"
+  district_au_forge_ecu_plural:0 " Automated foundries arcologies"
+  district_au_forge_ecu_desc:0 " Automated foundry arcology that produces enormous quantities of alloys with high efficiency"
+  district_au_factory_ecu:0 " Automated factory arcology"
+  district_au_factory_ecu_plural:0 " Automated factories arcologies"
+  district_au_factory_ecu_desc:0 " Automated factory arcology that produces enormous quantities of consumer goods with high efficiency"
+  district_au_generator_ecu:0 " Automated generator arcologies"
+  district_au_generator_ecu_plural:0 " Automated generator arcologies"
+  district_au_generator_ecu_desc:0 " This arcology is filled by many nuclear fusion power plant that produce enormous quantities of energy. Every power plant are automatised by the use of adapted AI. "
+  district_au_habitation_ecu:0 " Utopian spire"
+  district_au_habitation_ecu_plural:0 " Utopians spires"
+  district_au_habitation_ecu_desc:0 " Massive spire built with the purpose of housing a huge population in utopian living conditions. All forms of amenities are satisfied, ranging from all forms of physical and cultural activity, through the use of artificial  skylight, simulation and the use of the consequent space available."
+  district_au_administrative_ecu:0 " Administrative spire"
+  district_au_administrative_ecu_plural:0 " Administravive spires"
+  district_au_administrative_ecu_desc:0 " Massive spire fills with server and computer and specialized AIs that process and respond to millions of documents and data that come from across our empire. All can be supervised by a handful of workers who connect to the network and monitor the IAs"
+
+  district_au_forge_gestalt:0 " Automated forge complex"
+  district_au_forge_gestalt_plural:0 " Automated forges complex"
+  district_au_forge_gestalt_desc:0 " Automated forge complex that produces enormous quantities of alloys with high efficiency"
+  district_au_generator_gestalt:0 " Automated generator complex"
+  district_au_generator_gestalt_plural:0 " Automated generator complex"
+  district_au_generator_gestalt_desc:0 " This complex is filled by many nuclear fusion power plant that produce enormous quantities of energy. Every power plant are automatised by the use of adapted AI. "
+  district_au_mining_gestalt:0 " Automated mining complex"
+  district_au_mining_gestalt_plural:0 " Automated mining complex"
+  district_au_mining_gestalt_desc:0 " Automated drone harvest and process minerals. They can do this harvesting and processing everywhere on this world"
+  district_au_farming_gestalt:0 " Automated farming complex"
+  district_au_farming_gestalt_plural:0 " Automated farming complex"
+  district_au_farming_gestalt_desc:0 " Row of automated vertical farm that produce great amount of food."
+
+  district_hab_au_forge_zone:0 " Automated forge district"
+  district_hab_au_forge_zone_plural:0 " Automated forge districts"
+  district_hab_au_forge_zone_desc:0 " Automated forges that produces alloys with high efficiency fill this habitat district"
+  district_hab_au_factory_zone:0 " Automated factory district"
+  district_hab_au_factory_zone_plural:0 " Automated factories districts"
+  district_hab_au_factory_zone_desc:0 " Automated factories that produces consumer goods with high efficiency fill this habitat district"
+  district_hab_au_mining_zone:0 "  Automated mining district"
+  district_hab_au_mining_zone_plural:0 " Automated mining districts"
+  district_hab_au_mining_zone_desc:0 " Automated drone harvest and process minerals. They can do this harvesting and processing everywhere on this system"
+  district_hab_au_generator_zone:0 " Automated generator district"
+  district_hab_au_generator_zone_plural:0 " Autamated generator districts"
+  district_hab_au_generator_zone_desc:0 " Rows of nuclear fusion power plant that produce enormous quantities of energy. Every power plant are automatised by the use of adapted AI."
+  district_hab_au_farming_zone:0 " Automated farming district"
+  district_hab_au_farming_zone_plural:0 " Automated farming districts"
+  district_hab_au_farming_zone_desc:0 " Row of automated hydroponic farm and cultivation center that produce great amount of food."
+
+
+  #Building : 
+
+  building_sample_au:0 " Sample Building"
+  building_sample_au_desc:0 " Description of sample building."
+
+  #Job :
+
+  # job_au_social_worker:0 " Social Worker"      # non used
+  # job_au_social_worker_plural:0 " Social Workers"
+  # job_au_social_worker_desc:0 " Free from the hindrance of work, they can now participate in the functioning of their community by creating amenties and activities"
+  # mod_job_au_social_worker_add:0 " Social worker"
+  
+  #technology :
+
+  tech_au_computer:0 " Automation AIs"
+  tech_au_computer_desc:0 " The use of AI to supervise and automate our economy mainly in the field of resource production allows us to take the first steps in automation §Y allow us to advence on the path of automation §!"
+  tech_au_infrastructure:0 " Automation adapted infrastructure"
+  tech_au_infrastructure_desc:0 " Building the right infrastructure is important if we want our world to have an automated economy. §Y allow us to advence on the path of automation §!"
+  tech_au_organisation:0 " Automatised Utopia"
+  tech_au_organisation_desc:0 " A different social organization is necessary if we want our people to benefit from this automation. §Y unlock a decision that allow us to build automated districts §!"
+
+  #planet modifier : 
+
+  au_world_automated:0 " Automated world"
+  au_world_automated_desc:0 " This world has an infrastructure adapted to automated districts"
+  au_world_automated_ecu:0 " Automated world"
+  au_world_automated_ecu_desc:0 " This world has an infrastructure adapted to automated districts"
+   au_world_automated_hab:0 " Automated habitat"
+  au_world_automated_hab_desc:0 " This habitat has an infrastructure adapted to automated districts"
+  au_world_automated_rw:0 " Automated ring segment"
+  au_world_automated_rw_desc:0 " This segment has an infrastructure adapted to automated districts"
+  au_world_automated_machine:0 " Automated world"
+  au_world_automated_machine_desc:0 " This world has an infrastructure adapted to automated districts"
+  au_world_automated_hive:0 " Automated world"
+  au_world_automated_hive_desc:0 " This world has an infrastructure adapted to automated districts"
+
+  #decision : 
+
+  decision_build_automation:0 " Build automated district"
+  decision_build_automation_desc:0 " Build automated districts on this world"
+  decision_build_automation_ecu:0 " Build automated district (city world)"
+  decision_build_automation_ecu_desc:0 " Build automated district on this city world"
+  decision_build_automation_hab:0 " Build automated district (habitat)"
+  decision_build_automation_hab_desc:0 " Build automated district on this habitat"
+  decision_build_automation_rw:0 " Build automated district (ring world)"
+  decision_build_automation_rw_desc:0 " Build automated district on this ring segment"
+  decision_build_automation_machine:0 " Build automated district (machine world)"
+  decision_build_automation_machine_desc:0 " Build automated district ont this machine world"
+  decision_build_automation_hive:0 " Build automated district (hive world)"
+  decision_build_automation_hive_desc:0 " build automated district on this hive world"
+  decision_remove_automation:0 " Remove automated infrastructure"
+  decision_remove_automation_desc:0 " Remove the automated district of this world"

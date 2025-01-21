@@ -1,0 +1,2 @@
+# AutoEco
+A Stellaris mod
